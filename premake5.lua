@@ -5,7 +5,9 @@ project "GLFW"
 
 	targetdir ("bin/" .. outputDir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputDir .. "/%{prj.name}")
-
+	
+	includedirs { "glfw/include/" }
+	
 	files
 	{
 		"include/GLFW/glfw3.h",
